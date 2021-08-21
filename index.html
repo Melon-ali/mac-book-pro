@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <title>Mac Book Pro</title>
+</head>
+<body>
+    <main>
+        <div class="container"> 
+            <div class="grid grid-cols-2">
+                <!---- image Area Start----->
+               <div class="p-5 m-5">
+                <img src="images/mac.png" alt="">
+               </div>
+               <!----- image Area End ----->
+                <div class="p-5 m-5">
+                    <!----------- Mac Heading Start------------->
+                    <div>
+                        <h1 class="text-2xl font-bold">Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                        <p>Apple M1 chip with 8-core neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB-ports Magic Mouse Magic Keyboard-US English</p>
+                    </div>
+                    <!------------- Mac Heading End------------->
+
+                    <!----------Memory Start--------->
+                    <div class="my-5">
+                        <p class="font-bold">Memory</p>
+                        <button id="eight" class="d-5 border border-gray-200 shadow hover:shadow-lg md:hover:bg-gray-300 rounded p-2">8GB unified memory</button>
+                        <button id="sixteen" class="d-5 border border-gray-200 shadow hover:shadow-lg md:hover:bg-gray-300 rounded p-2">16GB unified memory</button>
+                    </div>
+                    <!----------Memory End--------->
+
+                    <!----------Storage Start--------->
+                    <div class="my-5">
+                        <p class="font-bold">Storage</p>
+                        <button id="fifty" class="d-5 border border-gray-200 shadow hover:shadow-lg md:hover:bg-gray-300 rounded p-2">256GB SSD storage</button>
+                        <button id="twelve" class="d-5 border border-gray-200 shadow hover:shadow-lg md:hover:bg-gray-300 rounded p-2">512GB SSD storage</button>
+                        <button id="terabyte" class="d-5 border border-gray-200 shadow hover:shadow-lg md:hover:bg-gray-300 rounded p-2">1TB SSD storage</button>
+                    </div>
+                    <!-----------Storage End----------->
+
+                    <!--------Delivery Option Start------>
+                    <div class="my-5">
+                        <p class="font-bold">Choose your delivery option</p>
+                        <button id="free" class="d-5 border border-gray-200 shadow hover:shadow-lg md:hover:bg-gray-300 rounded p-2">Friday,Aug 25 FREE Prime Delivery</button>
+                        <button id="charge" class="d-5 border border-gray-200 shadow hover:shadow-lg md:hover:bg-gray-300 rounded p-2">Friday,Aug 21 Delivery charge</button>
+                    </div>
+                    <!--------Delivery Option End------>
+
+                    <!--------Best Price Start-------->
+                    <div class="mt-5 w-72">
+                        <div class="grid grid-cols-2 font-bold py-3">
+                            <div class="">Best Price </div>
+                            <div>$<span> 1299</span></div>
+                        </div>
+                        <hr>
+                        <div class="grid grid-cols-2 font-bold py-3">
+                            <div>Extra Memory Cost</div>
+                            <div>$<span id="memory"> 0</span></div>
+                        </div>
+                        <hr>
+                        <div class="grid grid-cols-2 font-bold py-3">
+                            <div>Extra Storage Cost </div>
+                            <div>$<span id="storage"> 0</span></div>
+                        </div>
+                        <hr>
+                        <div class="grid grid-cols-2 font-bold py-3">
+                            <div>Delivery charge </div>
+                            <div>$<span id="delivery"> 0</span></div>
+                        </div>
+                        <hr class="border-2">
+                        <div class="grid grid-cols-2 font-bold py-3">
+                            <div>Total Price </div>
+                            <div>$<span id="total"> 1299</span></div>
+                        </div>
+                        <!--------Best Price End-------->
+
+                        <!------Apply Option Start------>
+                        <div>
+                            <p>Add Pomo code</p>
+                            <input class="border-2 rounded" type="text"><button class="d-5 border border-gray-200 shadow hover:shadow-lg bg-red-500 hover:bg-red-700 rounded text-white p-1 px-3">Apply</button>
+                        </div>
+                        <!------Apply Option End------>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h1 class="text-2xl text-center font-bold">Total: $ <span id="lastTotal">1299</span></h1>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
